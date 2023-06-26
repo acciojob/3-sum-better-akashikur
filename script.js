@@ -1,11 +1,10 @@
 function threeSum(nums, target) {
-// write your code here
+	
 	nums.sort((a, b) => a - b);
 
   let closestSum = Infinity;
   let minDiff = Infinity;
 
-  // Iterate through each number as the potential first element
   for (let i = 0; i < nums.length - 2; i++) {
     let left = i + 1;
     let right = nums.length - 1;
